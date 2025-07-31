@@ -1,5 +1,6 @@
 def display_menu():
-    print("\nShopping List Manager")
+    # Print menu exactly as expected without leading newline
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -7,6 +8,7 @@ def display_menu():
 
 def main():
     shopping_list = []
+
     while True:
         display_menu()
         choice = input("Enter your choice: ").strip()
@@ -40,3 +42,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
