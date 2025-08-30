@@ -13,7 +13,7 @@ def main():
     print("1. Celsius to Fahrenheit")
     print("2. Fahrenheit to Celsius")
     
-    choice = input("Enter your choice (1 or 2): ").strip()
+    choice=input("Enter your choice (1 or 2): ").strip()
     
     try:
         if choice=='1':
@@ -22,7 +22,3 @@ def main():
             print(f"{celsius}°C is {fahrenheit}°F")
         elif choice=='2':
             fahrenheit=float(input("Enter temperature in Fahrenheit: "))
-            celsius=fahrenheit_to_celsius(fahrenheit)
-            print(f"{fahrenheit}°F is {celsius}°C")
-        else:
-            print("Invali
